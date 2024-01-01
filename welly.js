@@ -45,7 +45,9 @@ console.log(filterNumbersGreaterThanFive(numbers)); // 預期輸出: [8, 10, 7]
 //   return formattedName;
 // }
 
-// Ans. 原因：filter(Boolean) 這樣的效果是去掉那些被轉換為 false 的元素，可以被用來過濾掉陣列中的 undefined、null 和空字串等偽值。join 用來做 += 的字串合併。
+// Ans. 原因：filter(Boolean) 這樣的效果是去掉那些被轉換為 false 的元素，
+// 可以被用來過濾掉陣列中的 undefined、null 和空字串等偽值。
+// join 用來做 += 的字串合併。
 
 function formatName(firstName, lastName) {
   return [firstName, lastName].filter(Boolean).join(' ');
